@@ -11,9 +11,9 @@
     <title>GitHub page as PWA template</title>
     <link
       rel="canonical"
-      href="https://Chloe-Havel.github.io/ICS2O-PWA-Test-1/"
+      href="https://Chloe-Havel.github.io/ICS2O-unit-5-04/"
     />
-    <link rel="manifest" href="/ICS2O-PWA-Test-1/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS2O-unit-5-04/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -63,17 +63,66 @@
           width="25%"
           height="25%"
         />
-        <p></p>
+        <p>Enter the day of the week</p>
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <select class="mdl-textfield__input" id="day" name="day">
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday,">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+          <label class="mdl-textfield__label" for="day">Day</label>
+        </div>
+
+        <p>enter the day of the week</p>
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <select class="mdl-textfield__input" id="age" name="age">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5,</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25+">25+</option>
+          </select>
+          <label class="mdl-textfield__label" for="age">Age</label>
+        </div>
+
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Say "Hello, World!"
+          Click Here
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="answer"></div>
       </main>
     </div>
   </body>

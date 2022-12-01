@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test-1/sw.js", {
-    scope: "/ICS2O-PWA-Test-1/",
+  navigator.serviceWorker.register("/ICS2O-unit-5-04/sw.js", {
+    scope: "/ICS2O-unit-5-04/",
   })
 }
 
@@ -19,5 +19,14 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  var day = document.getElementById("day").value
+  var age = document.getElementById("age").value
+
+  if (day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)) {
+    document.getElementById("answer").innerHTML =
+      "You are eligible for a student priseing"
+  } else {
+    document.getElementById("answer").innerHTML =
+      "You must pay regular priseing"
+  }
 }
