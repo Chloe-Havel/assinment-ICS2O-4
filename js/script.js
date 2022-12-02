@@ -1,4 +1,4 @@
-// Copyright (c) 2020 Chloe Havel All rights reserved
+// Copyright (c) 2022 Chloe Havel All rights reserved
 //
 // Created by: Chloe Havel
 // Created on: Sep 2020
@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-unit-5-04/sw.js", {
-    scope: "/ICS2O-unit-5-04/",
+  navigator.serviceWorker.register("/assinment-ICS2O-4/sw.js", {
+    scope: "/assinment-ICS2O-4/",
   })
 }
 
@@ -26,10 +26,27 @@ function myButtonClicked() {
 
   if (flavor == "ChocolateCreamPie") {
     cost = cost + 7.89
-  } else if {
-    document.getElementById("answer").innerHTML =
-      "You must pay regular priseing"
+  } else if (flavor == "ApplePie") {
+    cost = cost + 8.19
+  } else if (flavor == "CherryPie") {
+    cost = cost + 8.50
+  } else if (flavor == "PumpkinPie") {
+    cost = cost + 5.94
+  } else {
+    // nothing should be here!
   }
+  if (toping == "Whippedcream") {
+    cost = cost + 1.80
+  } else if (toping == "StrawBarry") {
+    cost = cost + 1.80
+  } else if (toping == "RainbowSprinkles") {
+    cost = cost + 0.99
+  } else {
+    // nothing should be here!
+  }
+
+  document.getElementById("answer").innerHTML =
+    "The pie that you want is $" + cost.toFixed(2)
 
   // output cost
 }
