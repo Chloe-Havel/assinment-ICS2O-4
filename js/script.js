@@ -20,7 +20,7 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   let cost = 0
-  
+
   var flavor = document.getElementById("flavor").value
   var toping = document.getElementById("toping").value
 
@@ -29,16 +29,16 @@ function myButtonClicked() {
   } else if (flavor == "ApplePie") {
     cost = cost + 8.19
   } else if (flavor == "CherryPie") {
-    cost = cost + 8.50
+    cost = cost + 8.5
   } else if (flavor == "PumpkinPie") {
     cost = cost + 5.94
   } else {
     // nothing should be here!
   }
   if (toping == "Whippedcream") {
-    cost = cost + 1.80
+    cost = cost + 1.8
   } else if (toping == "StrawBarry") {
-    cost = cost + 1.80
+    cost = cost + 1.8
   } else if (toping == "RainbowSprinkles") {
     cost = cost + 0.99
   } else {
